@@ -2,7 +2,7 @@ year = int(input("Enter a year: "))
 
 if year < 1582:
     year_type = "Not within the Gregorian calendar period"
-elif year % 4 == 1:
+elif year % 4 != 0:
     year_type = "common year"
 elif year % 100 != 0:
     year_type = "leap year"

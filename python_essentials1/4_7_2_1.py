@@ -149,9 +149,15 @@ from random import randrange
 # board [2] [1] = 8
 # board [2] [2] = 9
 
-board_size = int(input("Type the size of the board you want, board size needs to an integer number: "))
+board_size = input("Type the size of the board you want, board size needs to an integer number: ")
+while board_size.isdigit() == False:
+    board_size = input("Type a number for the board size. It needs to be atleast 3 and an integer. Number:")
+board_size = int(board_size)
 while board_size < 3:
-    board_size = int(input("boar size needs be atleast 3. Type new board size: "))
+    board_size = input("Board size needs be atleast 3. Type new board size: ")
+    while board_size.isdigit() == False:
+        board_size = input("Type an integer number for the board size. Number:")
+    board_size = int(board_size)
 
 board = [[[] for row in range(board_size)] for  column in range(board_size)]
 number = 1

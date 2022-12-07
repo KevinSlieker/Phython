@@ -1,6 +1,6 @@
 name = ("Jeroen Heemskerk", "Slieker, Kevin", "de Groot, Henk", "Arje van der Geest", "'O Brien, Willem Anton Stuward", "Jan Willem Klaasen")
 infix_array = ["van", "der", "'O"]  # other infixes to add
-data_base = []
+data_base = {}
 for person in name:
     first_name = ""
     last_name = ""

@@ -1,1 +1,5 @@
-python_essentials2\4_3_1_16.txt.close()
+import time
+
+timestamp = 1572879180
+print(time.gmtime(timestamp))
+print(time.localtime(timestamp))

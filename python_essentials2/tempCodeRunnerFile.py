@@ -1,5 +1,3 @@
-import time
+import random
 
-timestamp = 1572879180
-print(time.gmtime(timestamp))
-print(time.localtime(timestamp))
+a= random.choice((0,100,3))
